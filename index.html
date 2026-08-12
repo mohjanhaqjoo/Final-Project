@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Living Book</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="book-container">
+
+
+        <section id="cover" class="cover-screen">
+
+            <div class="cover-book" onclick="openBook()">
+
+                <div class="cover-inner">
+
+                    <p class="small-title">
+                        A STORY WAITING TO BREATHE
+                    </p>
+
+                    <h1>
+                        The Living Book
+                    </h1>
+
+                    <p class="subtitle">
+                        Where Stories Breathe
+                    </p>
+
+                    <div class="cover-line"></div>
+
+                    <p class="begin">
+                        Click the Book to Begin
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="book" class="book hidden">
+
+
+            <article class="single-page page-view hidden" id="welcomePage">
+
+                <div class="page-content welcome-content">
+
+                    <p class="eyebrow">
+                        THE LIVING BOOK
+                    </p>
+
+                    <h2>
+                        Where Stories<br>Breathe
+                    </h2>
+                    <br>
+
+                    <p class="intro-text">
+                        Some stories are remembered.
+                        Some are imagined.
+                        And some are waiting quietly for someone
+                        to give them a beginning.
+                    </p>
+
+                    <div class="quote-box">
+                        <em>
+                            “Every page holds a possibility.”
+                        </em>
+                    </div>
+
+                    <p class="center-text">
+                        The story is waiting for you.
+                    </p>
+
+                </div>
+
+                <span class="page-number">1</span>
+
+            </article>
+
+            <article class="single-page page-view hidden" id="choicePage">
+
+                <div class="page-content choice-content">
+
+                    <p class="eyebrow">
+                        CHOOSE YOUR PATH
+                    </p>
+
+                    <h2>
+                        What Would You<br>Like to Find?
+                    </h2>
+
+                    <p class="intro-text">
+                        Somewhere inside these pages,
+                        two different worlds are waiting.
+                        You only have to choose which door to open.
+                    </p>
+
+
+                    <div class="path-options">
+
+                        <button class="path-card" onclick="choosePath('memory')">
+
+                            <span class="path-icon">✿</span>
+
+                            <span class="path-title">
+                                A Memory
+                            </span>
+
+                            <span class="path-description">
+                                Stories about moments that stay
+                                long after they are gone.
+                            </span>
+
+                            <span class="path-enter">
+                                Enter the memories →
+                            </span>
+
+                        </button>
+
+
+                        <button class="path-card dream-card" onclick="choosePath('dream')">
+
+                            <span class="path-icon">☾</span>
+
+                            <span class="path-title">
+                                A Dream
+                            </span>
+
+                            <span class="path-description">
+                                Stories from places that could
+                                exist only when we dare to imagine.
+                            </span>
+
+                            <span class="path-enter">
+                                Enter the dream →
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <span class="page-number">2</span>
+
+            </article>
+
+
+<div class="spread page-view hidden memory-spread" id="memory1">
+
+    <article class="page memory-page memory-leaf">
+
+        <div class="page-content memory-story">
+
+            <div class="memory-top">
+                <span class="memory-number">I</span>
+                <span class="eyebrow">A MEMORY</span>
+            </div>
+
+            <h2>
+                The Last Leaf
+            </h2>
+
+            <p class="memory-opening">
+                “Sometimes hope is nothing more
+                than one small thing refusing to disappear.”
+            </p>
+
+            <div class="memory-rule"></div>
+
+            <div class="memory-text">
+
+                <p>
+                    In a quiet artists’ neighborhood, two young women
+                    shared a small room beneath an old ivy-covered wall.
+                </p>
+
+                <p>
+                    When illness came, one of them began counting
+                    the leaves outside her window. She became certain
+                    that when the last leaf fell, her own strength
+                    would disappear with it.
+                </p>
+
+                <p>
+                    Autumn arrived. One by one, the leaves vanished.
+                    Then came the final storm. By morning, one leaf was still there.
+                </p>
+
+                <p>
+                    She watched it survive the rain, the wind,
+                    and the cold — and something inside her changed.
+                    If that little leaf could remain, perhaps she could too.
+                </p>
+
+            </div>
+
+        </div>
+
+        <span class="page-number">3</span>
+
+    </article>
+
+    <article class="page memory-page memory-leaf">
+
+        <div class="page-content memory-reflection">
+
+            <div class="memory-art leaf-art">
+                <div class="art-glow"></div>
+                <span>🍂</span>
+            </div>
+
+            <span class="reflection-label">
+                WHAT THE STORY LEAVES BEHIND
+            </span>
+
+            <h3>
+                A Little Hope
+            </h3>
+
+            <div class="reflection-line"></div>
+
+            <p class="reflection-quote">
+                “The final leaf was never only a leaf.
+                It was a reason to stay.”
+            </p>
+
+            <p class="reflection-text">
+                Later, she learned the truth.
+                The leaf had been painted on the wall by an old artist
+                who had risked the storm to give her something to believe in.
+            </p>
+
+            <p class="reflection-text">
+                Sometimes kindness arrives quietly.
+                We may never know how much courage our smallest act
+                gives to another person.
+            </p>
+
+            <div class="memory-footer">
+                <span>✦</span>
+                <p>
+                    Hope can begin with something very small.
+                </p>
+            </div>
+
+        </div>
+
+        <span class="page-number">4</span>
+
+    </article>
+
+</div>
+
+
+<div class="spread page-view hidden memory-spread" id="memory2">
+
+    <article class="page memory-page memory-gift">
+
+        <div class="page-content memory-story">
+
+            <div class="memory-top">
+                <span class="memory-number">II</span>
+                <span class="eyebrow">A MEMORY</span>
+            </div>
+
+            <h2>
+                The Gift of the Magi
+            </h2>
+
+            <p class="memory-opening">
+                “Love is sometimes measured not by what we give,
+                but by what we are willing to lose.”
+            </p>
+
+            <div class="memory-rule"></div>
+
+            <div class="memory-text">
+
+                <p>
+                    Della had very little money, but Christmas was near,
+                    and she wanted to give Jim something worthy of him.
+                </p>
+
+                <p>
+                    She looked at the one thing she possessed that
+                    was truly beautiful: her long, shining hair.
+                </p>
+
+                <p>
+                    She sold it and bought a chain for Jim’s treasured watch.
+                </p>
+
+                <p>
+                    What she did not know was that Jim had already made
+                    his own sacrifice.
+                </p>
+
+                <p>
+                    He had sold his watch to buy the beautiful combs
+                    Della had always dreamed of wearing in her hair.
+                </p>
+
+            </div>
+
+        </div>
+
+        <span class="page-number">5</span>
+
+    </article>
+
+    <article class="page memory-page memory-gift">
+
+        <div class="page-content memory-reflection">
+
+            <div class="memory-art gift-art">
+                <div class="art-glow"></div>
+                <span>🎁</span>
+            </div>
+
+            <span class="reflection-label">
+                WHAT THE STORY LEAVES BEHIND
+            </span>
+
+            <h3>
+                What Love Gave
+            </h3>
+
+            <div class="reflection-line"></div>
+
+            <p class="reflection-quote">
+                “Their gifts became useless,
+                but their sacrifices became priceless.”
+            </p>
+
+            <p class="reflection-text">
+                Neither gift could be used as intended.
+                Yet neither sacrifice was wasted.
+            </p>
+
+            <p class="reflection-text">
+                They had each given away something precious
+                because the happiness of the other mattered more
+                than keeping it for themselves.
+            </p>
+
+            <div class="memory-footer">
+                <span>♡</span>
+                <p>
+                    The greatest gifts are often made of love,
+                    not money.
+                </p>
+            </div>
+
+        </div>
+
+        <span class="page-number">6</span>
+
+    </article>
+
+</div>
+
+
+<div class="spread page-view hidden memory-spread" id="memory3">
+
+    <article class="page memory-page memory-garden">
+
+        <div class="page-content memory-story">
+
+            <div class="memory-top">
+                <span class="memory-number">III</span>
+                <span class="eyebrow">A MEMORY</span>
+            </div>
+
+            <h2>
+                The Secret Garden
+            </h2>
+
+            <p class="memory-opening">
+                “Some forgotten things are not waiting to be found.
+                They are waiting to be cared for.”
+            </p>
+
+            <div class="memory-rule"></div>
+
+            <div class="memory-text">
+
+                <p>
+                    Mary arrived at a lonely house in the countryside,
+                    surrounded by locked rooms and stories no one wanted
+                    to explain. Then she discovered a hidden garden,
+                    forgotten behind a locked door.
+                </p>
+                    
+                <p>
+                    The garden had been abandoned for years.
+                    Weeds covered the paths, and the flowers had disappeared.
+                </p>
+
+                <p>
+                    But Mary did not leave it that way.
+                    She began clearing the earth, planting seeds,
+                    and giving the garden the attention it had forgotten.
+                </p>
+
+                <p>
+                    Slowly, green returned.
+                    Then came flowers.
+                    And with them came something else:
+                    life.
+                </p>
+
+            </div>
+
+        </div>
+
+        <span class="page-number">7</span>
+
+    </article>
+
+    <article class="page memory-page memory-garden">
+
+        <div class="page-content memory-reflection">
+
+            <div class="memory-art garden-art">
+                <div class="art-glow"></div>
+                <span>🌿</span>
+            </div>
+
+            <span class="reflection-label">
+                WHAT THE STORY LEAVES BEHIND
+            </span>
+
+            <h3>
+                The Garden Awoke
+            </h3>
+
+            <div class="reflection-line"></div>
+
+            <p class="reflection-quote">
+                “Growth does not always begin with a miracle.
+                Sometimes it begins with someone caring enough to stay.”
+            </p>
+
+            <p class="reflection-text">
+                The garden changed because someone believed
+                that something forgotten could still become beautiful.
+            </p>
+
+            <p class="reflection-text">
+                And perhaps people are like gardens too.
+                A little patience, a little kindness,
+                and something that seemed lost can begin to bloom again.
+            </p>
+
+            <div class="memory-footer">
+                <span>❀</span>
+                <p>
+                    What we care for has a way of coming alive.
+                </p>
+            </div>
+
+        </div>
+
+        <span class="page-number">8</span>
+
+    </article>
+
+</div>
+
+
+
+<article class="single-page page-view hidden memory-ending" id="memoryEnd">
+
+    <div class="page-content ending-page">
+
+        <span class="ending-label">
+            THE MEMORY PATH
+        </span>
+
+        <div class="ending-symbol">
+            ✦
+        </div>
+
+        <h2>
+            Some Stories<br> Stay With Us
+        </h2>
+
+        <div class="ending-rule"></div>
+
+        <p class="ending-text">
+            Three stories.
+            Three different lives.
+            And three quiet reminders that remain
+            long after the page has turned.
+        </p>
+
+        <p class="ending-note">
+            “A page can close without a story ending.”
+        </p>
+
+        <h3>
+            Where would you like to wander next?
+        </h3>
+
+        <div class="ending-buttons">
+
+            <button onclick="choosePath('dream')">
+                ☾ Step Into a Dream
+            </button>
+
+            <button onclick="goToChoice()">
+                ✿ Choose Another Path
+            </button>
+
+        </div>
+
+    </div>
+
+    <span class="page-number">9</span>
+
+</article>
+           
+
+            <article class="single-page page-view hidden" id="memoryEnd">
+
+                <div class="page-content ending-page">
+
+                    <p class="eyebrow">
+                        THE MEMORY PATH
+                    </p>
+
+                    <h2>
+                        Some Stories<br>Stay With Us
+                    </h2>
+
+                    <div class="end-decoration">
+                        ✦
+                    </div>
+
+                    <p class="ending-text">
+                        You have reached the end of this path.
+                        But the book is not finished.
+                    </p>
+
+                    <div class="ending-note">
+                        <p>
+                            “A page can close without a story ending.”
+                        </p>
+                    </div>
+
+                    <h3>
+                        Where would you like to wander next?
+                    </h3>
+
+                    <div class="ending-buttons">
+
+                        <button onclick="choosePath('dream')">
+                            ☾ Step Into a Dream
+                        </button>
+
+                        <button onclick="goToChoice()">
+                            ✿ Choose Another Path
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <span class="page-number">9</span>
+
+            </article>
+
+
+<section id="dream1" class="hidden">
+
+    <div class="spread page-view dream-spread">
+
+        <div class="dream-page">
+
+            <div class="dream-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="dream-label">
+                A Dream · I
+            </div>
+
+            <div class="dream-moon"></div>
+
+            <h1>
+                The Train That Only Came at Night
+            </h1>
+
+            <div class="dream-quote">
+                “Some dreams arrive quietly,
+                and only once.”
+            </div>
+
+            <div class="dream-story">
+
+                <p>
+                    Every night, when the city fell asleep,
+                    a train passed through a station that
+                    did not exist on any map.
+                </p>
+
+                <p>
+                    One night, a girl followed its distant
+                    whistle. Beneath the moon, she found
+                    a small platform hidden between two
+                    sleeping streets.
+                </p>
+
+            </div>
+            <span class="page-number">10</span>
+
+        </div>
+
+
+        <div class="dream-page">
+
+            <div class="dream-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="dream-note">
+
+                <div class="dream-sparkle">
+                    ✦
+                </div>
+
+                <div class="dream-note-title">
+                    What The Dream Revealed
+                </div>
+
+                <h2>
+                    The Unknown
+                </h2>
+
+                <p>
+                    There was no destination written
+                    on the train. Only one sentence
+                    above the door:
+                </p>
+
+                <div class="dream-card">
+
+                    <p>
+                        “Go where you are brave enough
+                        to imagine.”
+                    </p>
+
+                </div>
+
+                <p>
+                    She stepped inside. Outside the
+                    window, the city slowly disappeared.
+                    Buildings became stars.
+                    Roads became rivers of light.
+                </p>
+
+                <div class="dream-message">
+                    “Sometimes a dream does not take
+                    you away. It reminds you how far
+                    you could go.”
+                </div>
+
+            </div>
+            <span class="page-number">11</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="dream2" class="hidden">
+
+    <div class=" spread page-view dream-spread">
+
+        <div class="dream-page">
+
+            <div class="dream-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="dream-label">
+                A Dream · II
+            </div>
+
+            <div class="dream-sparkle">
+                ✦
+            </div>
+
+            <h1>
+                The Garden Above the Clouds
+            </h1>
+
+            <div class="dream-quote">
+                “Somewhere above the ordinary,
+                another world waits quietly.”
+            </div>
+
+            <div class="dream-story">
+
+                <p>
+                    She dreamed of a garden floating
+                    above the clouds, where every flower
+                    carried a different memory.
+                </p>
+
+                <p>
+                    There were no paths. She simply
+                    followed the softest light until
+                    she reached a tree covered in
+                    silver leaves.
+                </p>
+
+            </div>
+            <span class="page-number">12</span>
+
+        </div>
+
+
+        <div class="dream-page">
+
+            <div class="dream-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="dream-note">
+
+                <div class="dream-note-title">
+                    A Garden Of Memories
+                </div>
+
+                <h2>
+                    What She Found
+                </h2>
+
+                <p>
+                    Beneath the tree was a small door.
+                    When she opened it, she heard
+                    laughter she had almost forgotten.
+                </p>
+
+                <div class="dream-card">
+
+                    <p>
+                        Some places exist only long
+                        enough to remind us of who
+                        we once were.
+                    </p>
+
+                </div>
+
+                <p>
+                    When morning came, the garden
+                    vanished. But one silver leaf
+                    remained in her hand.
+                </p>
+
+                <div class="dream-message">
+                    “Perhaps dreams are not meant
+                    to be remembered forever.
+                    Perhaps they only need to leave
+                    something behind.”
+                </div>
+
+            </div>
+            <span class="page-number">13</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="dream3" class="hidden">
+
+    <div class="dream-spread">
+
+        <div class="dream-page">
+
+            <div class="dream-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="dream-label">
+                A Dream · III
+            </div>
+
+            <div class="dream-moon"></div>
+
+            <h1>
+                The House With No Doors
+            </h1>
+
+            <div class="dream-quote">
+                “Some dreams ask us not to escape,
+                but to finally look within.”
+            </div>
+
+            <div class="dream-story">
+
+                <p>
+                    In her dream, she discovered a
+                    quiet house standing alone beneath
+                    an enormous moon.
+                </p>
+
+                <p>
+                    It had windows, rooms and warm
+                    golden light — but no doors.
+                </p>
+
+            </div>
+            <span class="page-number">14</span>
+
+        </div>
+
+
+        <div class="dream-page">
+
+            <div class="dream-stars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="dream-note">
+
+                <div class="dream-sparkle">
+                    ✦
+                </div>
+
+                <div class="dream-note-title">
+                    The Door Was Never Missing
+                </div>
+
+                <h2>
+                    The Way Home
+                </h2>
+
+                <p>
+                    She searched every wall until she
+                    understood that the house was not
+                    asking her to enter.
+                </p>
+
+                <div class="dream-card">
+
+                    <p>
+                        It was asking her to stop
+                        running from herself.
+                    </p>
+
+                </div>
+
+                <p>
+                    The moment she stopped searching,
+                    the walls disappeared.
+                    She was standing beneath the moon,
+                    exactly where she had begun.
+                </p>
+
+                <div class="dream-message">
+                    “Sometimes the dream ends when
+                    we finally understand what it
+                    was trying to tell us.”
+                </div>
+
+            </div>
+            <span class="page-number">15</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<article
+    id="dreamEnd"
+    class="single-page page-view hidden memory-ending">
+
+    <div class="page-content ending-page">
+
+        <span class="ending-label">
+            THE END
+        </span>
+
+        <div class="ending-symbol">
+            ✦
+        </div>
+
+        <h2>
+            Until Another<br>Story Begins
+        </h2>
+
+        <div class="ending-rule"></div>
+
+        <p class="ending-text">
+            The book may be finished, but every ending
+            leaves a space for another story to begin.
+        </p>
+
+        <p class="ending-note">
+            “Some stories end on the page.
+            Others continue somewhere inside us.”
+        </p>
+
+        <div class="ending-buttons">
+
+            <button onclick="restartBook()">
+                ↻ Restart Again
+            </button>
+
+        </div>
+
+    </div>
+
+    <span class="page-number">
+        16
+    </span>
+
+</article>
+
+
+            <div class="navigation">
+
+                <button
+                    id="backBtn"
+                    onclick="goBack()"
+                    aria-label="Previous page">
+                    ←
+                </button>
+
+                <span id="chapterIndicator">
+                    1 / 17
+                </span>
+
+                <button
+                    id="nextBtn"
+                    onclick="goNext()"
+                    aria-label="Next page">
+                    →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
